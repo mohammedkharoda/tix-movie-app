@@ -12,6 +12,26 @@ var swiper = new Swiper(".mySwiper", {
   },
   lazy: true,
   breakpoints: {
+    1024:{
+      slidesPerView:2,
+      spaceBetween:20,
+    },
+    1000:{
+      slidesPerView:2,
+      spaceBetween:20,
+    },
+    900:{
+      slidesPerView:2,
+      spaceBetween:20,
+    },
+    800:{
+      slidesPerView:2,
+      spaceBetween:20,
+    },
+    700:{
+      slidesPerView:2,
+      spaceBetween:20,
+    },
     1200: {
       slidesPerView: 2,
       spaceBetween: 20,
@@ -29,6 +49,9 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper3 = new Swiper(".swiper3", {
   spaceBetween: 30,
+  autoplay: {
+    delay: 1000,
+  },
   pagination: {
     el: ".round-btn-poster",
     clickable: true,

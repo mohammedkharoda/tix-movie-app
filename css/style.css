@@ -66,7 +66,7 @@ h6 {
   --font-family: "Roboto", "Helvetica Neue";
   --font-color: #333333;
   ---header-font-h1: 700;
-  --header-font-h2: 500;
+  ---header-font-h3: 500;
   --body-font-size: 400;
 }
 
@@ -74,55 +74,50 @@ h6 {
 
 /* header */
 .header {
+  margin-top: 24px;
+  margin-left: 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 80px;
 }
 
-.logo {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: 72px;
-  margin-right: 780px;
+#nav-circular {
+  margin-right: 72px;
 }
 
 /* Navigation */
 
 .main-nav-list {
-  font-family: "Roboto";
+  font-family: var(--font-family);
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 3.2rem;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: var(---header-font-h3);
   color: var(--font-color);
   font-size: 18px;
   transition: all 0.3s;
 }
-
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
   border-radius: 9px;
   color: var(--primary-color);
 }
-
 #nav-circular {
   text-align: center;
   background-color: var(--btn-secondary-color);
-  height: 40px;
-  width: 40px;
   border-radius: 50%;
-  padding-bottom: 14px;
-  padding-top: 8px;
+  width: 40px;
+  height: 40px;
+  padding-top: 0.5rem;
   color: #fff;
-  margin-right: 70px;
 }
 
 .btn-mobile-nav {
@@ -154,10 +149,10 @@ h6 {
 }
 .testimonial {
   position: relative;
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
+  padding: 50px 0;
   overflow: hidden;
-  margin-right: 39px;
 }
 .movie-poster {
   border-radius: 15px;
@@ -166,11 +161,10 @@ h6 {
 
 /* movie title */
 .movie-title {
-  text-decoration: none;
-  font-family: "Roboto";
+  font-family: var(--font-family);
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: var(--font-size-h3);
   margin-top: 52px;
   margin-bottom: 24px;
   text-align: center;
@@ -215,7 +209,9 @@ h6 {
 }
 
 .arrow-back {
-  transform: translate(-60rem, -7rem);
+  position: relative;
+  right: 62rem;
+  top: -8rem;
   background-color: #fff;
   border-radius: 50%;
   padding: 1.5rem 1.5rem 1.2rem 1.5rem;
@@ -223,23 +219,18 @@ h6 {
 }
 
 .arrow-forward {
-  transform: translate(0.5rem, -4rem);
   background-color: #fff;
+  position: relative;
+  left: 2rem;
+  top: -5rem;
   padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+
   border-radius: 4rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   z-index: 10;
 }
 
 /* =================== Posters ====================== */
-.poster-img {
-  margin-top: 90px;
-  width: 100%;
-  padding-right: 79px;
-  padding-left: 70px;
-
-  margin-bottom: 270px;
-}
 
 .poster-btn-back {
   cursor: pointer;
@@ -249,7 +240,7 @@ h6 {
   border-radius: 50%;
   position: relative;
   z-index: 10;
-  right: 88rem;
+  right: 89rem;
   width: fit-content;
   top: -4rem;
 }
@@ -267,24 +258,33 @@ h6 {
   width: fit-content;
 }
 
+.poster-img {
+  margin-top: 90px;
+  width: 100%;
+  padding-right: 79px;
+  padding-left: 70px;
+  margin-bottom: 270px;
+}
+
 /* ============================= More Movies ================ */
+
 .movie-more-text {
   display: block;
-  font-family: "Roboto";
+  font-family: var(--font-family);
   font-style: normal;
   margin-left: 7rem;
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: var(---header-font-h3);
+  font-size: var(--font-size-h3);
   line-height: 32px;
   text-transform: capitalize;
   color: var(--font-color);
 }
 
 .movie-more-intro {
-  font-family: "Roboto", "Helvetica Neue";
+  font-family: var(--font-family);
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: var(--body-font-size);
+  font-size: var(--font-size-h5);
   line-height: 32px;
   text-transform: capitalize;
   color: #414a63;
@@ -300,8 +300,8 @@ h6 {
   right: 0;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: var(---header-font-h3);
+  font-size: var(--font-size-h4);
   text-align: right;
   text-transform: capitalize;
   color: #118eea;
@@ -325,14 +325,6 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
-.poster-info-2 {
-  transform: translate(-86px, 0);
-}
-
-.poster-info-3 {
-  transform: translate(-110px, 0);
-}
-
 .text-info {
   display: flex;
   flex-direction: row;
@@ -340,19 +332,19 @@ h6 {
 }
 .poster-title {
   color: var(--font-color);
-  font-family: "Roboto", "Helvetica Neue";
+  font-family: var(--font-family);
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: var(---header-font-h3);
+  font-size: var(--font-size-h4);
   line-height: 32px;
 }
 
 .poster-genera {
   color: #414a63;
-  font-family: "Roboto";
+  font-family: var(--font-family);
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: var(--body-font-size);
+  font-size: var(--font-size-h5);
   line-height: 24px;
 }
 
@@ -381,7 +373,7 @@ hr {
 .footer-heading {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(---header-font-h3);
   font-size: 18px;
   line-height: 21px;
   color: var(--font-color);
@@ -398,7 +390,7 @@ hr {
 
 .footer-link:link,
 .footer-link:visited {
-  font-family: "Roboto";
+  font-family: var(--font-family);
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
@@ -432,6 +424,7 @@ hr {
 }
 
 /* ##################### Media Query ################# */
+
 @media (min-width: 160em) {
   .logo {
     width: 8rem;
@@ -527,58 +520,88 @@ hr {
   }
 }
 
-@media (min-width: 90em) {
-  .header {
-    margin-bottom: 0.5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 9.6rem;
-  }
-
-  .movie-links {
-    text-decoration: none;
+@media (min-width: 73em) {
+  .poster-more-image {
+    height: 500px;
+    width: 340px;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .container {
     height: 0%;
-    width: 100%;
+    width: 105%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .poster-btn-back {
-    right: 81rem;
-    top: -4rem;
+}
+
+@media (min-width: 72.5em) {
+  .container {
+    width: 106%;
   }
-  .poster-btn-forward {
-    top: -8rem;
-    left: -3rem;
+  .poster-more-image {
+    height: 500px;
+    width: 350px;
+  }
+  .poster-img {
+    padding-right: 110px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 71em) {
+  .container {
+    width: 106%;
   }
 
   .poster-img {
-    margin-left: 4%;
+    padding-right: 140px;
   }
 
-  .poster {
-    margin-top: 239px;
-    /* margin-bottom: 256px; */
+  .shows-poster {
+    margin-left: 0.5rem;
+  }
+
+  .poster-info-1 {
+    transform: translate(-58px, -7px);
+  }
+
+  .poster-info-2 {
+    transform: translate(-103px, -7px);
+  }
+
+  .poster-info-3 {
+    transform: translate(-100px, -7px);
+  }
+
+  .poster-more-image {
+    height: 487px;
+    width: 316px;
+  }
+
+  .poster-img {
+    margin-bottom: 240px;
+  }
+  .round-btn-poster {
+    display: none;
   }
 }
 
 @media (max-width: 70em) {
-  .header {
-    display: flex;
-    gap: 2.5rem;
-    justify-content: space-around;
-  }
 
   .testimonial {
     transform: translateX(5px);
   }
 
   .round-btn {
+    display: none;
+  }
+
+  .round-btn-poster {
     display: none;
   }
 
@@ -659,13 +682,20 @@ hr {
   }
 }
 
+@media (min-width: 59em) {
+  .poster {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 55em) {
   .close-icon {
     margin-bottom: 5rem;
   }
 
   .header {
-    margin-top: 3rem;
+    margin-top: 24px;
+    margin-left: 72px;
   }
 
   .movie-title {
@@ -698,6 +728,8 @@ hr {
 
   .btn-mobile-nav {
     display: block;
+    margin-right: 72px;
+
   }
   #nav-circular {
     text-align: center;
@@ -746,6 +778,7 @@ hr {
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
+    margin-right: 72px;
   }
 
   .nav-open .icon-mobile-nav[name="menu-outline"] {
@@ -778,10 +811,11 @@ hr {
     transform: translate(-21rem, 0);
   }
 
-  .logo {
-    height: 3.8rem;
+  .poster-img {
+    margin-top: 90px;
+    width: 100%;
+    margin-bottom: 270px;
   }
-
   .poster-title {
     font-size: 20px;
   }
@@ -813,10 +847,6 @@ hr {
     font-size: 30px;
     margin-bottom: 2rem;
     margin-left: 1.5rem;
-  }
-
-  .logo {
-    height: 4.5rem;
   }
 
   .movie-more-intro {
