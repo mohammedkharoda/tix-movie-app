@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- my styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="header" id="navigation-bar">
+      <img class="logo" src="./assests/Images/tix id 1.png" alt="" />
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link nav-cta" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#movie">Movie</a></li>
+          <li><a class="main-nav-link" href="#">Payment</a></li>
+          <li>
+            <a class="main-nav-link" href="#"
+              ><ion-icon name="notifications-outline"></ion-icon
+            ></a>
+          </li>
+          <li><a class="main-nav-link" id="nav-circular" href="#">A</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon
+          class="icon-mobile-nav menu-icon"
+          name="menu-outline"
+        ></ion-icon>
+        <ion-icon
+          class="icon-mobile-nav close-icon"
+          name="close-outline"
+        ></ion-icon>
+      </button>
+    </header>
+    <!-- end of navbar -->
+
+    <main>
+      <!-- Movie Selection -->
+      <section class="container">
+        <div class="testimonial mySwiper">
+          <div class="testi-content swiper-wrapper">
+            <div class="movie-show swiper-slide">
+              <img src="./assests/Images/NWH.png" alt="" class="movie-poster" />
+              <h2 class="movie-title">Spider-Man: No Way Home</h2>
+              <div class="movie-btn">
+                <button class="movie-secondary">XXI</button>
+                <button class="movie-third">CGV</button>
+                <button class="movie-primary">CINEPOLIS</button>
+              </div>
+            </div>
+
+            <!-- Poster-2 -->
+            <div class="movie-show swiper-slide">
+              <img
+                src="./assests/Images/Resident Evil_ Welcome to Raccoon City.png"
+                alt=""
+                class="movie-poster"
+              />
+              <h2 class="movie-title">
+                Resident Evil: Welcome to Raccoon City
+              </h2>
+              <div class="movie-btn">
+                <button class="movie-secondary">XXI</button>
+                <button class="movie-third">CGV</button>
+                <button class="movie-primary">CINEPOLIS</button>
+              </div>
+            </div>
+
+            <!-- Poster-3 -->
+            <div class="movie-show swiper-slide">
+              <img
+                src="./assests/Images/matrix.png"
+                alt=""
+                class="movie-poster"
+              />
+
+              <h2 class="movie-title">Matrix</h2>
+              <div class="movie-btn">
+                <button class="movie-secondary">XXI</button>
+                <button class="movie-third">CGV</button>
+                <button class="movie-primary">CINEPOLIS</button>
+              </div>
+            </div>
+            <!-- Poster-4 -->
+            <div class="movie-show swiper-slide">
+              <img
+                src="./assests/Images/Yowis Ben.png"
+                alt=""
+                class="movie-poster"
+              />
+              <h2 class="movie-title">Yowis Ben</h2>
+              <div class="movie-btn">
+                <button class="movie-secondary">XXI</button>
+                <button class="movie-third">CGV</button>
+                <button class="movie-primary">CINEPOLIS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Icons -->
+        <div class="round-btn">
+          <div class="arrow-forward">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+          <div class="arrow-back">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </div>
+        </div>
+      </section>
+      <!-- End of Movie Selection -->
+
+      <!-- POSTER ADS -->
+      <section class="poster container">
+        <div class="swiper swiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./assests/Images/Poster 1.png"
+                alt=""
+                class="poster-img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assests/Images/Poster 2.png"
+                alt=""
+                class="poster-img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assests/Images/poster 3.png"
+                alt=""
+                class="poster-img"
+              />
+            </div>
+          </div>
+          <!-- Add Pagination -->
+        </div>
+        <!-- Swiper Btns -->
+        <div class="round-btn-poster">
+          <div class="poster-btn-back">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </div>
+          <div class="poster-btn-forward">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </section>
+      <!-- END POSTER ADS -->
+
+      <!-- Movie More -->
+      <section class="more-movies" id="movie">
+        <h3 class="movie-more-text">Movies</h3>
+        <div class="movie-more-intro">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+            necessitatibus saepe ab aliquam aliquid ipsum perfer
+          </p>
+        </div>
+        <div class="movie-more-container">
+          <a class="movie-more-expand" href="#">See All</a>
+        </div>
+        <div class="shows-poster">
+          <img
+            src="./assests/Images/NWH.png  "
+            alt=""
+            class="poster-more-image"
+          />
+          <img
+            src="./assests/Images/John Wick_ Chapter 3 - Parabellum.png"
+            class="poster-more-image"
+            alt=""
+          />
+
+          <img
+            src="./assests/Images/matrix.png"
+            alt=""
+            class="poster-more-image"
+          />
+        </div>
+      </section>
+      <section class="info-movies">
+        <div class="text-info">
+          <div class="poster-info-1">
+            <h5 class="poster-title">Spider-Man: No Way Home</h5>
+            <p class="poster-genera">Action,Adventure, Fantasy</p>
+          </div>
+          <div class="poster-info-2">
+            <h3 class="poster-title">John Wick-3</h3>
+            <p class="poster-genera">Action,Adventure,Crime</p>
+          </div>
+          <div class="poster-info-3">
+            <h3 class="poster-title">Matrix</h3>
+            <p class="poster-genera">Action,Adventure,Sci-Fi</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <hr />
+    <footer class="footer">
+      <div class="grid grid--5--cols">
+        <div class="logo-col">
+          <img class="logo-footer" src="./assests/Images/tix id 2.png" alt="" />
+        </div>
+
+        <!-- tag-1 -->
+        <div class="nav-col">
+          <p class="footer-heading">Perusahaan</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Kontak Kami</a></li>
+            <li><a class="footer-link" href="#">Tentang</a></li>
+            <li><a class="footer-link" href="#">Partner</a></li>
+          </ul>
+        </div>
+
+        <!-- tag-2 -->
+        <div class="nav-col">
+          <p class="footer-heading">Seputar</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">TIX ID News</a></li>
+            <li><a class="footer-link" href="#">Bioskop</a></li>
+            <li><a class="footer-link" href="#">Tiket Saya</a></li>
+            <li><a class="footer-link" href="#">Pembayaran</a></li>
+            <li><a class="footer-link" href="#">Cicilan</a></li>
+          </ul>
+        </div>
+
+        <!-- tag-3 -->
+        <div class="nav-col">
+          <p class="footer-heading">Dukungan</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Pusat Bantuan</a></li>
+            <li><a class="footer-link" href="#">Kebijakan Privasi</a></li>
+            <li><a class="footer-link" href="#">FAQ</a></li>
+            <li><a class="footer-link" href="#">Syarat dan Ketentuan</a></li>
+            <li><a class="footer-link" href="#">Update Covid-19</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="nav-col">
+          <p class="footer-heading">Follow On Social Media</p>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <!-- Download Info -->
+          <div class="media">
+            <p class="download-text">Download Aplikasi TIX ID</p>
+            <div class="download-info">
+              <img
+                src="./assests/Images/Google Play.png"
+                alt=""
+                class="media-logo"
+              />
+
+              <img
+                src="./assests/Images/image 6.png"
+                alt=""
+                class="media-logo"
+              />
+            </div>
+          </div>
+
+          <div class="copyright">
+            <p class="copyright-text">
+              2021 TIX ID - PT Nusantara Elang Sejahtera.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Icons section -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="./app.js"></script>
+  </body>
+</html>
